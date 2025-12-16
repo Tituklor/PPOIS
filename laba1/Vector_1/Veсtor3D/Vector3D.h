@@ -90,7 +90,6 @@ public:
      */
     void SetEnd(double x, double y, double z);
 
-    // === Векторные операции ===
 
     /**
      * @brief Вычислить длину вектора
