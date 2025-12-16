@@ -1,6 +1,5 @@
 /// @file Vector3D.h
 /// @brief Класс трехмерного вектора
-/// @author Ваше Имя
 /// @date 2025
 /// @version 1.0
 
