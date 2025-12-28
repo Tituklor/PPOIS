@@ -1,0 +1,61 @@
+PersonBase 12 22 → Membership*, PassKey*, InvalidHeightError, InvalidWeightError, InvalidGenderError, InvalidAmountError, SubscriptionIssueError
+EmployeeBase 4 8 → PersonBase
+FrontDeskStaff 6 25 → KeyRack*, ClientRegistry*, FrontDesk*, PersonBase
+Coach 8 8 → TikTokPlatform*, InstagramPlatform*, EmployeeBase
+Janitor 2 5 → Space, Reflector
+Manager 3 7 → ScheduleMgr*, Coach*, EmployeeBase
+Accountant 2 4 → EmployeeBase
+SocialMgr 4 6 → InstagramPlatform*, TikTokPlatform*
+ClientRegistry 3 5 → PersonBase*
+KeyRack 2 5 → PassKey*
+PassKey 5 12 → StorageUnit*, PersonBase*
+FrontDesk 6 6 → FitnessZone*, GymZone*, SaunaZone*, PoolZone*, RingZone*
+Membership 15 12 → PersonBase*, GymZone*, FitnessZone*, SaunaZone*, PoolZone*, RingZone*
+StorageUnit 14 15 → PassKey*
+ZoneBase 2 3
+FitnessZone 7 7 → ZoneBase
+GymZone 8 8 → ZoneBase
+PoolZone 5 5 → ZoneBase
+RingZone 4 4 → ZoneBase
+SaunaZone 3 3 → ZoneBase
+Space 4 5
+Reflector 4 5
+ChangingRoom 3 4 → StorageUnit*, Scale*
+Scale 5 3
+ScheduleMgr 3 4
+ProductBase 3 4
+ExerciseBall 5 7 → ProductBase
+CreatineSupplement 8 10 → ProductBase
+Beverage 7 9 → ProductBase
+PoolSlippers 6 8 → ProductBase
+Headband 4 6 → ProductBase
+ProteinBar 9 11 → ProductBase
+JumpRope 4 6 → ProductBase
+SwimCap 6 8 → ProductBase
+Swimwear 5 7 → ProductBase
+Towel 5 7 → ProductBase
+WorkoutGloves 4 6 → ProductBase
+InvalidHeightError 0 2
+InvalidWeightError 0 2
+InvalidGenderError 0 2
+InvalidAmountError 0 2
+SubscriptionIssueError 0 2
+InvalidAreaError 0 2
+PasskeyError 0 2
+LockerError 0 2
+ScheduleError 0 2
+ProductError 0 2
+ZoneError 0 2
+PaymentError 0 2
+ClientError 0 2
+AccessError 0 2
+EmployeeError 0 2
+CoachError 0 2
+JanitorError 0 2
+ManagerError 0 2
+
+ 56 КЛАССОВ
+ 186 ПОЛЕЙ
+ 218 МЕТОДОВ
+ 81 АССОЦИАЦИЯ  
+ 18 ИСКЛЮЧЕНИЙ
