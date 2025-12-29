@@ -4,7 +4,7 @@
 #include <string>
 #include "employee_base.h"
 
-// ✅ Forward declarations
+
 class PassKey;
 class TikTokPlatform;
 class InstagramPlatform;
@@ -17,7 +17,7 @@ class Coach : public EmployeeBase
 private:
     TikTokPlatform* tiktok_profile;
     InstagramPlatform* instagram_profile;
-    bool on_duty;  // ✅ ОДИН поле вместо дублирования
+    bool on_duty; 
 
 public:
     Coach(std::string coach_name, unsigned int coach_age, char coach_gender,
@@ -33,7 +33,8 @@ public:
 
     std::string get_name() const;
     bool check_duty_status() const;
-    bool is_on_duty() const { return on_duty; }  // ✅ Геттер для поля
+    bool is_on_duty() const { return on_duty; } 
 };
 
 #endif // COACH_DEFS_H
+
