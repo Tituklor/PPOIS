@@ -1,0 +1,48 @@
+BaseException 1 3 → none
+Person 4 6 → Member, Coach, Staff, Visitor
+Member 2 5 → Person, Membership, Payment, Booking, Locker
+Coach 2 4 → Person, TrainingSession, Salary
+Staff 1 3 → Person, Salary
+Administrator 1 4 → Person, MemberManager, CoachManager, FacilityManager
+Visitor 1 2 → Person, Booking
+MembershipPlan 4 5 → Membership
+Membership 4 6 → Member, MembershipPlan, Payment
+InvalidAgeException 0 2 → none
+InvalidNameException 0 2 → none
+InvalidIdException 0 2 → none
+InvalidDateException 0 2 → none
+InvalidPhoneNumberException 0 2 → none
+InvalidEmailException 0 2 → none
+InvalidRoleException 0 2 → none
+Payment 5 4 → Member, Membership, Invoice, Order
+Salary 4 3 → Coach, Staff
+Invoice 3 3 → Payment
+Order 4 3 → Payment, CafeOrder
+InsufficientFundsException 0 2 → none
+MembershipExpiredException 0 2 → none
+PaymentFailedException 0 2 → none
+TrainingSession 5 4 → Coach, Member, Facility, Booking
+Booking 5 4 → Member, Visitor, TrainingSession, Facility
+Calendar 1 5 → Booking
+Facility 4 5 → Gym, Pool, Court, Booking, TrainingSession
+Gym 1 2 → Facility
+Pool 1 2 → Facility
+Court 1 2 → Facility
+FacilityBookedException 0 2 → none
+Equipment 4 4 → Treadmill, DumbbellSet, ResistanceBand
+Treadmill 1 2 → Equipment
+DumbbellSet 2 2 → Equipment
+ResistanceBand 1 2 → Equipment
+EquipmentUnavailableException 0 2 → none
+Locker 3 4 → Member
+TowelService 2 3 → Member
+CafeOrder 3 3 → Member, Order
+MemberManager 1 8 → Member, Administrator
+CoachManager 1 7 → Coach, Administrator
+FacilityManager 1 6 → Facility, Administrator
+EquipmentManager 1 6 → Equipment, Administrator
+PaymentManager 1 6 → Payment, Administrator
+BookingManager 1 7 → Booking, Administrator
+ClubServer 6 10 → MemberManager, CoachManager, FacilityManager, EquipmentManager, PaymentManager, BookingManager
+
+
